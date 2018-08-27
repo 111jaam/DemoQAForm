@@ -33,8 +33,8 @@ class QAFQuestionListVC: UIViewController {
         let strTitle_Details = NSMutableAttributedString(string: strDetails + "\n" + str_SubDetails)
         
         if let font1 = UIFont(name: "HelveticaNeue-Medium", size: 16), let font2 = UIFont(name: "HelveticaNeue-Light", size: 10){
-            strTitle_Details.addAttribute(NSAttributedString.Key.font, value: font1, range: NSMakeRange(0, strDetails.count))
-            strTitle_Details.addAttribute(NSAttributedString.Key.font, value: font2, range: NSMakeRange(strDetails.count, str_SubDetails.count+1))
+            strTitle_Details.addAttribute(NSAttributedStringKey.font, value: font1, range: NSMakeRange(0, strDetails.count))
+            strTitle_Details.addAttribute(NSAttributedStringKey.font, value: font2, range: NSMakeRange(strDetails.count, str_SubDetails.count+1))
         }
         
         self.btnFinish.setAttributedTitle(strTitle_Details, for: .normal)

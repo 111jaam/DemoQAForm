@@ -1,0 +1,11 @@
+framework module JsonSerializerSwift {
+  umbrella header "JsonSerializerSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module JsonSerializerSwift.Swift {
+    header "JsonSerializerSwift-Swift.h"
+    requires objc
+}

@@ -68,12 +68,12 @@ extension QAFAnswerListVC: UITableViewDataSource, UITableViewDelegate {
         cell.configureCell(withAnswer: (modelQuestion?.options_answers[indexPath.row].0)!)
         
         if (modelQuestion?.options_answers[indexPath.row].1)! {
-            cell.accessoryType = UITableViewCell.AccessoryType.checkmark
+            cell.accessoryType = UITableViewCellAccessoryType.checkmark
             cell.isSelected = true
             cell.setSelected(true, animated: true)
             
         }else{
-            cell.accessoryType = UITableViewCell.AccessoryType.none
+            cell.accessoryType = UITableViewCellAccessoryType.none
             cell.isSelected = false
             cell.setSelected(false, animated: true)
         }
@@ -93,8 +93,8 @@ extension QAFAnswerListVC: UITableViewDataSource, UITableViewDelegate {
             let strTitle_Details = NSMutableAttributedString(string: strDetails! + "\n" + str_SubDetails)
             
             if let font1 = UIFont(name: "HelveticaNeue-Medium", size: 16), let font2 = UIFont(name: "HelveticaNeue-Light", size: 12){
-                strTitle_Details.addAttribute(NSAttributedString.Key.font, value: font1, range: NSMakeRange(0, strDetails!.count))
-                strTitle_Details.addAttribute(NSAttributedString.Key.font, value: font2, range: NSMakeRange(strDetails!.count, str_SubDetails.count+1))
+                strTitle_Details.addAttribute(NSAttributedStringKey.font, value: font1, range: NSMakeRange(0, strDetails!.count))
+                strTitle_Details.addAttribute(NSAttributedStringKey.font, value: font2, range: NSMakeRange(strDetails!.count, str_SubDetails.count+1))
             }
             
             headerView.lblTitle.attributedText = strTitle_Details
@@ -106,8 +106,8 @@ extension QAFAnswerListVC: UITableViewDataSource, UITableViewDelegate {
             let strTitle_Details = NSMutableAttributedString(string: strDetails! + "\n" + str_SubDetails)
             
             if let font1 = UIFont(name: "HelveticaNeue-Medium", size: 16), let font2 = UIFont(name: "HelveticaNeue-Light", size: 12){
-                strTitle_Details.addAttribute(NSAttributedString.Key.font, value: font1, range: NSMakeRange(0, strDetails!.count))
-                strTitle_Details.addAttribute(NSAttributedString.Key.font, value: font2, range: NSMakeRange(strDetails!.count, str_SubDetails.count+1))
+                strTitle_Details.addAttribute(NSAttributedStringKey.font, value: font1, range: NSMakeRange(0, strDetails!.count))
+                strTitle_Details.addAttribute(NSAttributedStringKey.font, value: font2, range: NSMakeRange(strDetails!.count, str_SubDetails.count+1))
             }
             
             headerView.lblTitle.attributedText = strTitle_Details
@@ -120,7 +120,7 @@ extension QAFAnswerListVC: UITableViewDataSource, UITableViewDelegate {
         
         let cell = tblAnswerOptions.cellForRow(at: indexPath)
         
-        cell!.accessoryType = UITableViewCell.AccessoryType.checkmark
+        cell!.accessoryType = UITableViewCellAccessoryType.checkmark
         cell!.isSelected = true
         
         modelQuestion?.options_answers[indexPath.row].1 = true
@@ -130,7 +130,7 @@ extension QAFAnswerListVC: UITableViewDataSource, UITableViewDelegate {
         
         let cell = tblAnswerOptions.cellForRow(at: indexPath)
         
-        cell!.accessoryType = UITableViewCell.AccessoryType.none
+        cell!.accessoryType = UITableViewCellAccessoryType.none
         cell!.isSelected = false
         
         modelQuestion?.options_answers[indexPath.row].1 = false        

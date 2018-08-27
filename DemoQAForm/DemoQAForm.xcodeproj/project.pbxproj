@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2245A321340F98003BFC3C /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2245A121340F97003BFC3C /* NVActivityIndicatorView.framework */; };
+		6E2245A421340F98003BFC3C /* JsonSerializerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2245A221340F98003BFC3C /* JsonSerializerSwift.framework */; };
+		6E2245A521340FA1003BFC3C /* JsonSerializerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2245A221340F98003BFC3C /* JsonSerializerSwift.framework */; };
+		6E2245A621340FA1003BFC3C /* JsonSerializerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2245A221340F98003BFC3C /* JsonSerializerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E2245A721340FA1003BFC3C /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2245A121340F97003BFC3C /* NVActivityIndicatorView.framework */; };
+		6E2245A821340FA1003BFC3C /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2245A121340F97003BFC3C /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E3DF8CC212F863F00FC2F02 /* QAFAnswerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DF8CA212F863E00FC2F02 /* QAFAnswerHeaderView.xib */; };
 		6E3DF8CD212F863F00FC2F02 /* QAFAnswerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DF8CB212F863F00FC2F02 /* QAFAnswerHeaderView.swift */; };
 		6E48169A212E8C7A009F2042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E481699212E8C7A009F2042 /* AppDelegate.swift */; };
@@ -28,12 +34,6 @@
 		6E481721212EF079009F2042 /* QAFQuestionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E481720212EF079009F2042 /* QAFQuestionListCell.swift */; };
 		6E481723212EF097009F2042 /* QAFAnswersListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E481722212EF097009F2042 /* QAFAnswersListCell.swift */; };
 		6E481725212F0139009F2042 /* default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E481724212F0138009F2042 /* default.plist */; };
-		6E4A076F21301B8200B82F22 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4A076E21301B8100B82F22 /* NVActivityIndicatorView.framework */; };
-		6E4A077021301B8C00B82F22 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4A076E21301B8100B82F22 /* NVActivityIndicatorView.framework */; };
-		6E4A077121301B8C00B82F22 /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4A076E21301B8100B82F22 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E4A077321301BDA00B82F22 /* JsonSerializerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4A077221301BDA00B82F22 /* JsonSerializerSwift.framework */; };
-		6E4A077421301BE100B82F22 /* JsonSerializerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4A077221301BDA00B82F22 /* JsonSerializerSwift.framework */; };
-		6E4A077521301BE100B82F22 /* JsonSerializerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4A077221301BDA00B82F22 /* JsonSerializerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FEB5F657BD389BDE6DCF133 /* Pods_DemoQAFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0295FA1E26C9C83479087FFA /* Pods_DemoQAFormTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +54,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6E4A077521301BE100B82F22 /* JsonSerializerSwift.framework in Embed Frameworks */,
-				6E4A077121301B8C00B82F22 /* NVActivityIndicatorView.framework in Embed Frameworks */,
+				6E2245A821340FA1003BFC3C /* NVActivityIndicatorView.framework in Embed Frameworks */,
+				6E2245A621340FA1003BFC3C /* JsonSerializerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +68,8 @@
 		23C4E8A491264C3C4480D632 /* Pods-DemoQAForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoQAForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoQAForm/Pods-DemoQAForm.release.xcconfig"; sourceTree = "<group>"; };
 		4A16F80E169101724F16A28A /* Pods_DemoQAForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoQAForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0A62287E7A7EE45E714A10 /* Pods-DemoQAFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoQAFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoQAFormTests/Pods-DemoQAFormTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E2245A121340F97003BFC3C /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = "<group>"; };
+		6E2245A221340F98003BFC3C /* JsonSerializerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JsonSerializerSwift.framework; sourceTree = "<group>"; };
 		6E3DF8CA212F863E00FC2F02 /* QAFAnswerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QAFAnswerHeaderView.xib; sourceTree = "<group>"; };
 		6E3DF8CB212F863F00FC2F02 /* QAFAnswerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAFAnswerHeaderView.swift; sourceTree = "<group>"; };
 		6E481696212E8C7A009F2042 /* DemoQAForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoQAForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +97,6 @@
 		6E481720212EF079009F2042 /* QAFQuestionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAFQuestionListCell.swift; sourceTree = "<group>"; };
 		6E481722212EF097009F2042 /* QAFAnswersListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAFAnswersListCell.swift; sourceTree = "<group>"; };
 		6E481724212F0138009F2042 /* default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default.plist; sourceTree = "<group>"; };
-		6E4A076E21301B8100B82F22 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = "<group>"; };
-		6E4A077221301BDA00B82F22 /* JsonSerializerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JsonSerializerSwift.framework; sourceTree = "<group>"; };
 		A28A56E0F8B73F7144C43BC4 /* Pods-DemoQAForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoQAForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoQAForm/Pods-DemoQAForm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,11 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2245A321340F98003BFC3C /* NVActivityIndicatorView.framework in Frameworks */,
 				6E4816EE212EE5C7009F2042 /* Pods_DemoQAForm.framework in Frameworks */,
-				6E4A076F21301B8200B82F22 /* NVActivityIndicatorView.framework in Frameworks */,
-				6E4A077321301BDA00B82F22 /* JsonSerializerSwift.framework in Frameworks */,
-				6E4A077021301B8C00B82F22 /* NVActivityIndicatorView.framework in Frameworks */,
-				6E4A077421301BE100B82F22 /* JsonSerializerSwift.framework in Frameworks */,
+				6E2245A521340FA1003BFC3C /* JsonSerializerSwift.framework in Frameworks */,
+				6E2245A421340F98003BFC3C /* JsonSerializerSwift.framework in Frameworks */,
+				6E2245A721340FA1003BFC3C /* NVActivityIndicatorView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +147,8 @@
 		6E48168D212E8C7A009F2042 = {
 			isa = PBXGroup;
 			children = (
-				6E4A077221301BDA00B82F22 /* JsonSerializerSwift.framework */,
-				6E4A076E21301B8100B82F22 /* NVActivityIndicatorView.framework */,
+				6E2245A221340F98003BFC3C /* JsonSerializerSwift.framework */,
+				6E2245A121340F97003BFC3C /* NVActivityIndicatorView.framework */,
 				6E481698212E8C7A009F2042 /* DemoQAForm */,
 				6E4816AD212E8C7D009F2042 /* DemoQAFormTests */,
 				6E481697212E8C7A009F2042 /* Products */,
@@ -563,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -618,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -688,6 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45S5U7KJGD;
 				INFOPLIST_FILE = DemoQAFormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -710,6 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45S5U7KJGD;
 				INFOPLIST_FILE = DemoQAFormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
